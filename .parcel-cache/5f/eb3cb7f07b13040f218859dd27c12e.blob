@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/test/index.HASH_REF_73c72df9b3c5dcecf3d53490edaf96df.css">
+  <title>Wedding</title>
+</head>
+<body>
+  <div class="page">
+    <section class="main">
+      <img class="main__image" alt="K+A" src="/test/K_A.HASH_REF_c966b265936f9c4af6c1be0fa034021a.png">
+      <h1 class="main__title">Приглашаем на нашу свадьбу!</h1>
+      <div class="main__date">
+        <p class="main__date-month">Июль</p>
+        <p class="main__date-day">16</p>
+        <p class="main__date-year">2021</p>
+      </div>
+      <h2 class="main__time">17:00</h2>
+      <img class="delimiter" alt="---" src="/test/delimiter.HASH_REF_0dd5fe75d037feea587ff279eee788ad.png">
+    </section>
+    <section class="timer">
+      <div class="timer__container">
+        <div class="timer__circle">
+          <div class="timer__text-container">
+            <p class="timer__count timer__days">120</p>
+            <p class="timer__text">Дни</p>
+          </div>
+        </div>
+        <div class="timer__circle">
+          <div class="timer__text-container">
+            <p class="timer__count timer__hours">17</p>
+            <p class="timer__text">Часы</p>
+          </div>
+        </div>
+        <div class="timer__circle">
+          <div class="timer__text-container">
+            <p class="timer__count timer__minutes">50</p>
+            <p class="timer__text">Минуты</p>
+          </div>
+        </div>
+        <div class="timer__circle">
+          <div class="timer__text-container">
+            <p class="timer__count timer__seconds">5</p>
+            <p class="timer__text">Секунды</p>
+          </div>
+        </div>
+      </div>
+      <p class="timer__info">... осталось до начала!</p>
+      <img class="delimiter" alt="---" src="/test/delimiter.HASH_REF_0dd5fe75d037feea587ff279eee788ad.png">
+    </section>
+    <section class="newlyweds">
+      <div class="newlyweds__photo"></div>
+      <img class="newlyweds__names" alt="Кирилл и Анастасия" src="/test/Kirill_Anastaisha.HASH_REF_549e63188ed109dfe30a5da9f122bb85.png">
+      <img class="delimiter" alt="---" src="/test/delimiter.HASH_REF_0dd5fe75d037feea587ff279eee788ad.png">
+    </section>
+    <section class="adress">
+      <h2 class="adress__title">Адрес мероприятия</h2>
+      <img class="adress__map" alt="Москва, Тополевая аллея, 10" src="/test/map.HASH_REF_b6d7956b00a9fefb6b48fd9a896bd70e.png">
+      <img class="delimiter" alt="---" src="/test/delimiter.HASH_REF_0dd5fe75d037feea587ff279eee788ad.png">
+    </section>
+    <section class="dress">
+      <h2 class="dress__title">Дресс-код</h2>
+      <p class="dress__text">Уважаемые гости, мы будем Вам очень признательны,
+        если в своём наряде Вы выберете эти оттенки:
+      </p>
+      <div class="dress__container">
+        <div class="dress__color dress__color_first"></div>
+        <div class="dress__color dress__color_second"></div>
+        <div class="dress__color dress__color_third"></div>
+        <div class="dress__color dress__color_fouth"></div>
+      </div>
+      <img class="delimiter" alt="---" src="/test/delimiter.HASH_REF_0dd5fe75d037feea587ff279eee788ad.png">
+    </section>
+  </div>
+  <script src="/test/index.HASH_REF_062e9a7565ca912a5f7d6b832142d36c.js"></script>
+</body>
+</html>

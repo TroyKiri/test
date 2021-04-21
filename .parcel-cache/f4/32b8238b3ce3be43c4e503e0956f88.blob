@@ -1,0 +1,30 @@
+.newlyweds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newlyweds__photo {
+
+}
+.newlyweds__names {
+
+}
+
+@media (min-width: 320px) {
+  .newlyweds {
+    width: 290px;
+    
+  }
+  .newlyweds__photo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: 2px solid #A3706D;
+  }
+  .newlyweds__names {
+    margin-bottom: 20px;
+    width: 290px;
+  }
+}
