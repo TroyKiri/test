@@ -1,0 +1,86 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__title {
+  text-align: center;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #4E2D2B;
+  text-transform: uppercase;
+}
+.main__date {
+  display: flex;
+  align-items: center;
+}
+.main__date-month {
+  margin: 0;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4E2D2B;
+}
+.main__date-day {
+  margin: 0;
+  border-right: 2px solid #4E2D2B;
+  border-left: 2px solid #4E2D2B;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #A3706D;
+}
+.main__date-year {
+  margin: 0;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #4E2D2B;
+}
+.main__time {
+  margin: 0;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #A3706D;
+}
+
+@media (min-width: 320px) {
+  .main__image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+  }
+  .main__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .main__date {
+    margin-bottom: 20px;
+  }
+  .main__date-month {
+    width: 84px;
+    font-size: 28px;
+    margin-right: 15px;
+  }
+  .main__date-year {
+    width: 84px;
+    font-size: 52px;
+    margin-left: 15px;
+  }
+  .main__date-day {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 52px;
+  }
+  .main__time {
+    font-size: 52px;
+    margin-bottom: 20px;
+  }
+}

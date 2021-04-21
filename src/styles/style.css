@@ -1,0 +1,15 @@
+@import url('./vendor/normalize.css');
+@import url('./blocks/main/main.css');
+@import url('./blocks/delimiter/delimiter.css');
+@import url('./blocks/timer/timer.css');
+@import url('./blocks/newlyweds/newlyweds.css');
+@import url('./blocks/adress/adress.css');
+@import url('./blocks/dress/dress.css');
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+}
