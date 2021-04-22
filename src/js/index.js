@@ -1,7 +1,5 @@
 // Таймер обратного отсчета
 
-const { default: axios } = require("axios");
-
 // Дни
 const days = document.querySelector('.timer__days');
 // Часы
@@ -74,10 +72,16 @@ function sendForm(form) {
 
   const data = { name, secondName, presence};
 
-  axios.post('https://sheet.best/api/sheets/f71febad-82d0-45bc-9317-f6c80290f14a', data)
+  fetch('https://sheet.best/api/sheets/f71febad-82d0-45bc-9317-f6c80290f14a', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
     .then((res) => {
       form.reset();
-      if (res.data[0].presence === "yes") {
+      if (presence === "yes") {
         openPopup(popupYes, popupButtonYes);
       } else {
         openPopup(popupNo, popupButtonNo)
