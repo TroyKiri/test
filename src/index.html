@@ -12,6 +12,8 @@
 <body>
   <div class="page">
     <section class="main">
+      <img class="main__flowers main__flowers_one" src="./images/flowers/flowers_one.png">
+      <img class="main__flowers main__flowers_two" src="./images/flowers/flowers_one.png">
       <img class="main__image" alt="K+A" src="./images/main/K_A.png">
       <h1 class="main__title">Приглашаем на нашу свадьбу!</h1>
       <div class="main__date">
@@ -74,6 +76,25 @@
         <div class="dress__color dress__color_fouth"></div>
       </div>
       <img class="delimiter" alt="---" src="./images/delimiter.png">
+    </section>
+    
+    <section class="form">
+      <h2 class="form__title">Подтверждение присутствия</h2>
+      <form class="form__arrea" name="form">
+        <input class="form__input form__input_name" type="text" placeholder="Имя" minlength="2" maxlength="30" required>
+        <input class="form__input form__input_second-name" type="text" placeholder="Фамилия" minlength="2" maxlength="30" required>
+        <h3 class="form__text"><input class="form__radio" name="presence" type="radio" value="yes" required>Присутствие подтверждаю</h3>
+        <h3 class="form__text"><input class="form__radio" name="presence" type="radio" value="no" required>К сожалению, не смогу быть</h3>
+        <button class="form__button">Отправить</button>
+      </form>
+      <img class="delimiter" alt="---" src="./images/delimiter.png">
+    </section>
+
+    <section class="contacts">
+      <h3 class="contacts__text">Если у Вас остались вопросы, Вы можете связаться с нами по телефону или WhatsApp:</h3>
+      <a class="contacts__phone" href="tel:+79689460945">+7(968)946-09-45</a>
+      <a class="contacts__phone" href="tel:+79037777341">+7(903)777-73-41</a>
+      <h3 class="contacts__meeting">До встречи! <br> Ваши Кирилл и Анастасия!</h3>
     </section>
   </div>
 </body>

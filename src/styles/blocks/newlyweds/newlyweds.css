@@ -4,7 +4,9 @@
   align-items: center;
 }
 .newlyweds__photo {
-
+  background-image: url(../../../images/we.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .newlyweds__names {
 

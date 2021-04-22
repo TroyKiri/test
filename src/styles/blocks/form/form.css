@@ -1,0 +1,144 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__title {
+  margin: 0;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4E2D2B;
+}
+
+.form__arrea {
+  display: flex;
+}
+
+.form__input {
+  background: #FFFFFF;
+  border: 1px solid #A3706D;
+  outline: none;
+  border-radius: 50px;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #4E2D2B;
+}
+.form__input:focus {
+  border: 2px solid #A3706D;
+}
+.form__input_active {
+  border: 2px solid #A3706D;
+}
+
+.form__input::-moz-placeholder { color: #A3706D; opacity: .5;}
+.form__input::-webkit-input-placeholder { color: #A3706D; opacity: .5;}
+
+.form__input_name {
+
+}
+
+.form__input_second-name {
+
+}
+
+.form__container {
+
+}
+
+.form__text {
+  margin: 0;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #4E2D2B;
+  display:flex;
+  align-items: center;
+}
+.form__radio {
+  outline: none;
+  position: relative;
+  height: 13px;
+  width: 13px;
+}
+.form__radio::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #A3706D;
+}
+.form__radio:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4E2D2B;
+  border: 1px solid #A3706D;
+}
+
+.form__button {
+  background-color: #A3706D;
+  border-radius: 50px;
+  border: 2px solid #A3706D;
+  outline: none;
+
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
+
+.form__button:hover {
+  opacity: .7;
+}
+
+@media (min-width: 320px) {
+  .form {
+    width: 290px
+  }
+  .form__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .form__arrea {
+    flex-direction: column;
+  }
+  .form__input {
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  .form__text {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .form__radio {
+    margin-right: 10px;
+  }
+  .form__button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 180px;
+    font-size: 20px;
+    align-self: center;
+  }
+}

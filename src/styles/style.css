@@ -5,6 +5,8 @@
 @import url('./blocks/newlyweds/newlyweds.css');
 @import url('./blocks/adress/adress.css');
 @import url('./blocks/dress/dress.css');
+@import url('./blocks/form/form.css');
+@import url('./blocks/contacts/contacts.css');
 
 .page {
   width: 100%;

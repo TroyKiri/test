@@ -1,0 +1,51 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__text {
+  margin:0;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #4E2D2B;
+}
+.contacts__phone {
+  text-decoration: none;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #4E2D2B;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #4E2D2B;
+}
+.contacts__meeting {
+  margin: 0;
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #4E2D2B;
+}
+
+@media (min-width: 320px) {
+  .contacts {
+    width: 290px;
+  }
+  .contacts__text {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .contacts__phone {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .contacts__meeting {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+}
