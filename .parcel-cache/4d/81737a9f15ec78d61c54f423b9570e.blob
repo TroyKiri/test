@@ -1,0 +1,5 @@
+@media (min-width: 320px) {
+  .delimiter {
+    width: 290px;
+  }
+}
