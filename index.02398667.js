@@ -1,2 +1,2 @@
-
+!function(){const e={days:document.querySelector(".timer__days"),hours:document.querySelector(".timer__hours"),minutes:document.querySelector(".timer__minutes"),seconds:document.querySelector(".timer__seconds")},t="July 16 2021 17:00:00";function n(e,t){const n=function(e){const t=Date.parse(e)-Date.parse(new Date),n=Math.floor(t/1e3%60),o=Math.floor(t/1e3/60%60),r=Math.floor(t/36e5%24);return{total:t,days:Math.floor(t/864e5),hours:r,minutes:o,seconds:n}}(t);e.days.innerHTML=n.days,e.hours.innerHTML=n.hours,e.minutes.innerHTML=n.minutes,e.seconds.innerHTML=n.seconds,n.total<=0&&clearInterval(timeInterval)}n(e,t),setInterval(n,1e3,e,t)}();
 //# sourceMappingURL=index.02398667.js.map
