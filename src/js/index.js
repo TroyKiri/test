@@ -1,5 +1,7 @@
 // Таймер обратного отсчета
 
+const { default: axios } = require("axios");
+
 // Дни
 const days = document.querySelector('.timer__days');
 // Часы
@@ -39,3 +41,54 @@ function updateTimer(date, endtime) {
 
 updateTimer(date, endtime);
 setInterval(updateTimer, 1000, date, endtime);
+
+
+// Форма
+
+const form = document.forms.form;
+const button = form.elements.submit;
+
+const popupError = document.querySelector('.popup__error');
+const popupButtonError = popupError.querySelector('.popup__button')
+
+const popupYes = document.querySelector('.popup__yes');
+const popupButtonYes = popupYes.querySelector('.popup__button');
+
+const popupNo = document.querySelector('.popup__no');
+const popupButtonNo = popupNo.querySelector('.popup__button');
+
+function openPopup(popup, button) {
+  popup.classList.add('popup_is-opened');
+  
+  function closePopup() {
+    popup.classList.remove('popup_is-opened');
+  }
+
+  button.addEventListener('click', closePopup);
+}
+
+function sendForm(form) {
+  const name = form.elements.name.value;
+  const secondName = form.elements.secondName.value;
+  const presence = form.elements.presence.value;
+
+  const data = { name, secondName, presence};
+
+  axios.post('https://sheet.best/api/sheets/f71febad-82d0-45bc-9317-f6c80290f14a', data)
+    .then((res) => {
+      form.reset();
+      if (res.data[0].presence === "yes") {
+        openPopup(popupYes, popupButtonYes);
+      } else {
+        openPopup(popupNo, popupButtonNo)
+      }
+    })
+    .catch((err) => {
+      openPopup(popupError, popupButtonError);
+    });
+}
+
+button.addEventListener('click', (event) => {
+  event.preventDefault();
+  sendForm(form);
+});

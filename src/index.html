@@ -81,11 +81,11 @@
     <section class="form">
       <h2 class="form__title">Подтверждение присутствия</h2>
       <form class="form__arrea" name="form">
-        <input class="form__input form__input_name" type="text" placeholder="Имя" minlength="2" maxlength="30" required>
-        <input class="form__input form__input_second-name" type="text" placeholder="Фамилия" minlength="2" maxlength="30" required>
+        <input class="form__input form__input_name" type="text" name="name" placeholder="Имя" minlength="2" maxlength="30" required>
+        <input class="form__input form__input_second-name" type="text" name="secondName" placeholder="Фамилия" minlength="2" maxlength="30" required>
         <h3 class="form__text"><input class="form__radio" name="presence" type="radio" value="yes" required>Присутствие подтверждаю</h3>
         <h3 class="form__text"><input class="form__radio" name="presence" type="radio" value="no" required>К сожалению, не смогу быть</h3>
-        <button class="form__button">Отправить</button>
+        <button name="submit" type="submit" class="form__button">Отправить</button>
       </form>
       <img class="delimiter" alt="---" src="./images/delimiter.png">
     </section>
@@ -96,6 +96,33 @@
       <a class="contacts__phone" href="tel:+79037777341">+7(903)777-73-41</a>
       <h3 class="contacts__meeting">До встречи! <br> Ваши Кирилл и Анастасия!</h3>
     </section>
+
+    <section class="popup popup__error">
+      <div class="popup__container">
+        <h2 class="popup__title">Что-то пошло не так...</h2>
+        <h3 class="popup__subtitle">Попробуйте позже или позвоните нам!</h3>
+        <a class="popup__phone" href="tel:+79689460945">Кирилл</a>
+        <a class="popup__phone" href="tel:+79037777341">Анастасия</a>
+        <button class="popup__button">Хорошо</button>
+      </div>
+    </section>
+
+    <section class="popup popup__yes">
+      <div class="popup__container">
+        <h2 class="popup__title">Спасибо, что сообщили!</h2>
+        <h3 class="popup__subtitle">Мы будем очень рады Вас видеть!</h3>
+        <button class="popup__button">Хорошо</button>
+      </div>
+    </section>
+
+    <section class="popup popup__no">
+      <div class="popup__container">
+        <h2 class="popup__title">Спасибо, что сообщили!</h2>
+        <h3 class="popup__subtitle">Нам очень жаль, что вы не сможете присутствовать ...</h3>
+        <button class="popup__button">Хорошо</button>
+      </div>
+    </section>
+
   </div>
   <script src="./js/index.js"></script>
 </body>
