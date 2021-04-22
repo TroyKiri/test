@@ -1,3 +1,6 @@
+.timer {
+  z-index: 2;
+}
 .timer__container {
   display: flex;
   flex-wrap: wrap;
