@@ -4,9 +4,12 @@
   align-items: center;
 }
 .newlyweds__photo {
-  background-image: url(../../../images/we-min.jpg);
+  /* background-image: url(../../../images/we-min.jpg);
   background-position: center;
-  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
 }
 .newlyweds__names {
 
@@ -18,12 +21,17 @@
     
   }
   .newlyweds__photo {
+    width: 290px;
+    border-radius: 50%;
     margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #A3706D;
+    /* margin-top: 20px;
     margin-bottom: 20px;
     width: 290px;
     height: 290px;
     border-radius: 50%;
-    border: 2px solid #A3706D;
+    border: 2px solid #A3706D; */
   }
   .newlyweds__names {
     margin-bottom: 20px;
