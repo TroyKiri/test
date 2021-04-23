@@ -89,9 +89,11 @@
         <i class="circle-preloader"></i>
       </div>
       <form class="form__arrea" name="form">
-        <input class="form__input form__input_name" type="text" name="name" placeholder="Имя" minlength="2" maxlength="30" required>
-        <input class="form__input form__input_second-name" type="text" name="secondName" placeholder="Фамилия" minlength="2" maxlength="30" required>
-        <h3 class="form__text"><input class="form__radio" name="presence" type="radio" value="yes" required>Присутствие подтверждаю</h3>
+        <input class="form__input form__input_name" type="text" name="name" placeholder="Имя" autocomplete="off" required>
+        <span class="form__error"></span>
+        <input class="form__input form__input_second-name" type="text" name="secondName" placeholder="Фамилия"  autocomplete="off" required>
+        <span class="form__error"></span>
+        <h3 class="form__text"><input class="form__radio" name="presence" type="radio" value="yes" required checked>Присутствие подтверждаю</h3>
         <h3 class="form__text"><input class="form__radio" name="presence" type="radio" value="no" required>К сожалению, не смогу быть</h3>
         <button name="submit" type="submit" class="form__button">Отправить</button>
       </form>

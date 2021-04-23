@@ -1,3 +1,5 @@
+import { FormValidator } from './validation/Validation.js';
+
 // Таймер обратного отсчета
 
 // Дни
@@ -57,6 +59,10 @@ const popupButtonNo = popupNo.querySelector('.popup__button');
 
 const preloader = document.querySelector('.circle-preloader__container');
 
+const formValidator = new FormValidator(form);
+
+// formValidator.setEventListeners();
+
 function renderPreloader(preloader, form) {
   preloader.classList.add('circle-preloader__container_active');
   form.classList.add('form__arrea_not-active');
@@ -110,10 +116,14 @@ function sendForm(form) {
 
 button.addEventListener('click', (event) => {
   event.preventDefault();
-  sendForm(form);
+  if (formValidator.checkValid()) {
+    sendForm(form);
+  }
 });
 
 window.onload = function() {
-  document.querySelector('.page').classList.add('page_loaded');
-  document.querySelector('.circle-preloader__container_page').classList.remove('circle-preloader__container_page_active');
+  setTimeout(function() {
+    document.querySelector('.page').classList.add('page_loaded');
+    document.querySelector('.circle-preloader__container_page').classList.remove('circle-preloader__container_page_active');
+  }, 1500)
 }

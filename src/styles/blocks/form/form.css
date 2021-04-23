@@ -43,6 +43,19 @@
 .form__input::-moz-placeholder { color: #A3706D; opacity: .5;}
 .form__input::-webkit-input-placeholder { color: #A3706D; opacity: .5;}
 
+.form__error {
+  font-family: 'Cormorant', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #4E2D2B;
+  display: none;
+}
+
+.form__error_active {
+  display: block;
+}
+
 .form__input_name {
 
 }
@@ -111,6 +124,10 @@
 
 .form__button:hover {
   opacity: .7;
+}
+
+.form__button_disabled {
+  opacity: .5;
 }
 
 @media (min-width: 320px) {
