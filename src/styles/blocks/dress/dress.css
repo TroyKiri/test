@@ -85,6 +85,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width: 88%;
+    max-width: 680px;
   }
   .dress__color {
     width: 130px;

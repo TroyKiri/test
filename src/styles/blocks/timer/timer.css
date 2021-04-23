@@ -71,6 +71,7 @@
 @media (min-width: 600px) {
   .timer {
     width: 88%;
+    max-width: 680px;
     display: flex;
     flex-direction: column;
     align-items: center;
