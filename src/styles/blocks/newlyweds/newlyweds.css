@@ -30,3 +30,21 @@
     width: 290px;
   }
 }
+
+@media (min-width: 501px) {
+  .newlyweds {
+    width: 88%;
+  }
+  .newlyweds__photo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 2px solid #A3706D;
+  }
+  .newlyweds__names {
+    margin-bottom: 20px;
+    width: 350px;
+  }
+}

@@ -3,3 +3,11 @@
     width: 290px;
   }
 }
+
+@media (min-width: 501px) {
+  .delimiter {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
