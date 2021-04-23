@@ -55,6 +55,17 @@ const popupButtonYes = popupYes.querySelector('.popup__button');
 const popupNo = document.querySelector('.popup__no');
 const popupButtonNo = popupNo.querySelector('.popup__button');
 
+const preloader = document.querySelector('.circle-preloader__container');
+
+function renderPreloader(preloader, form) {
+  preloader.classList.add('circle-preloader__container_active');
+  form.classList.add('form__arrea_not-active');
+}
+function removePreloader(preloader, form) {
+  preloader.classList.remove('circle-preloader__container_active');
+  form.classList.remove('form__arrea_not-active');
+}
+
 function openPopup(popup, button) {
   popup.classList.add('popup_is-opened');
   
@@ -66,6 +77,9 @@ function openPopup(popup, button) {
 }
 
 function sendForm(form) {
+  form.reset();
+  renderPreloader(preloader, form);
+
   const name = form.elements.name.value;
   const secondName = form.elements.secondName.value;
   const presence = form.elements.presence.value;
@@ -80,7 +94,7 @@ function sendForm(form) {
     body: JSON.stringify(data)
   })
     .then((res) => {
-      form.reset();
+      removePreloader(preloader, form);
       if (presence === "yes") {
         openPopup(popupYes, popupButtonYes);
       } else {
@@ -88,6 +102,7 @@ function sendForm(form) {
       }
     })
     .catch((err) => {
+      removePreloader(preloader, form);
       openPopup(popupError, popupButtonError);
     });
 }
@@ -96,3 +111,8 @@ button.addEventListener('click', (event) => {
   event.preventDefault();
   sendForm(form);
 });
+
+window.onload = function() {
+  document.querySelector('.page').classList.add('page_loaded');
+  document.querySelector('.circle-preloader__container_page').classList.remove('circle-preloader__container_page_active');
+}

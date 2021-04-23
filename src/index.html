@@ -10,6 +10,11 @@
   <title>Wedding</title>
 </head>
 <body>
+
+  <div class="circle-preloader__container_page circle-preloader__container_page_active">
+    <i class="circle-preloader"></i>
+  </div>
+
   <div class="page">
     <section class="main">
       <img class="main__flowers main__flowers_one" src="./images/flowers/flowers_one.png">
@@ -80,6 +85,9 @@
     
     <section class="form">
       <h2 class="form__title">Подтверждение присутствия</h2>
+      <div class="circle-preloader__container">
+        <i class="circle-preloader"></i>
+      </div>
       <form class="form__arrea" name="form">
         <input class="form__input form__input_name" type="text" name="name" placeholder="Имя" minlength="2" maxlength="30" required>
         <input class="form__input form__input_second-name" type="text" name="secondName" placeholder="Фамилия" minlength="2" maxlength="30" required>
@@ -123,7 +131,7 @@
       </div>
     </section>
 
-    <i class="circle-preloader"></i>
+    
 
   </div>
   <script src="./js/index.js"></script>

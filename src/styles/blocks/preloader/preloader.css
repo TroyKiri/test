@@ -1,9 +1,31 @@
+.circle-preloader__container {
+	width: 290px;
+	height: 260px;
+	background-color: #ffffff;
+	display: none;
+}
+
+.circle-preloader__container_page {
+	width: 100%;
+	height: 100vh;
+	background-color: #ffffff;
+	display: none;
+}
+
+.circle-preloader__container_page_active {
+	display: block;
+}
+
+.circle-preloader__container_active {
+	display: block;
+}
+
 .circle-preloader {
 	display: block;
 	width: 100px;
 	height: 100px;
-	border: 4px solid #444;
-	border-bottom-color: #888;
+	border: 5px solid #A3706D;
+	border-bottom-color: #4E2D2B;
 	
 	border-radius: 50%;
 	
@@ -15,9 +37,9 @@
 	margin: auto;
 	
 	animation: spin .75s infinite linear;
-
-	display: none;
 }
+
+
 
 @keyframes spin {
 	100% {

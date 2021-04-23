@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .form__title {
@@ -16,6 +17,10 @@
 
 .form__arrea {
   display: flex;
+}
+
+.form__arrea_not-active {
+  display: none;
 }
 
 .form__input {
