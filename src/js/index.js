@@ -77,7 +77,6 @@ function openPopup(popup, button) {
 }
 
 function sendForm(form) {
-  form.reset();
   renderPreloader(preloader, form);
 
   const name = form.elements.name.value;
@@ -85,6 +84,8 @@ function sendForm(form) {
   const presence = form.elements.presence.value;
 
   const data = { name, secondName, presence};
+
+  form.reset();
 
   fetch('https://sheet.best/api/sheets/f71febad-82d0-45bc-9317-f6c80290f14a', {
     method: 'POST',
