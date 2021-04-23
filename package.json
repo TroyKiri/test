@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "rimraf dist && parcel build src/index.html --public-url /test/ --no-content-hash",
-    "dev": "rimraf dist && parcel src/index.html --public-url /test/ --open",
+    "build": "rimraf dist && parcel build src/index.html --public-url / --no-content-hash",
+    "dev": "rimraf dist && parcel src/index.html --public-url / --open",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
